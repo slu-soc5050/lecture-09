@@ -1,5 +1,5 @@
 Package: lecture-09
-Title: SOC 4015/5050 - Lecture 09 - Probability
+Title: SOC 4015/5050 - Lecture 09 - Working with Factors
 Version: 18.1.0.9000
 Authors@R: person("Christopher", "Prener", email = "chris.prener@slu.edu",
                   role = c("aut", "cre"))
