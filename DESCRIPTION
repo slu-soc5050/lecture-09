@@ -14,7 +14,9 @@ BugReports: https://github.com/slu-soc5050/lecture-09/issues
 Imports:
     here,
     knitr,
+    remotes,
     rmarkdown,
-    testDriveR
+    testDriveR,
+    usethis
 Remotes:
     chris-prener/testDriveR
