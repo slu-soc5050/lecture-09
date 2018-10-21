@@ -1,0 +1,62 @@
+\documentclass{tufte-handout}
+
+\usepackage{xcolor}
+
+% set hyperlink attributes
+\hypersetup{colorlinks}
+
+% set image attributes:
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+% indent subsections
+\newenvironment{subs}
+  {\adjustwidth{3em}{0pt}}
+  {\endadjustwidth}
+
+% ============================================================
+
+% define the title
+\title{SOC 4015/5050: Lecture 09 Functions}
+\author{Christopher Prener, Ph.D.}
+\date{Fall 2018}
+% ============================================================
+\begin{document}
+% ============================================================
+\maketitle % generates the title
+% ============================================================
+
+\vspace{5mm}
+\section{Packages}
+\begin{itemize}
+\item \texttt{base}
+\item \texttt{janitor}
+\item \texttt{tidyverse}
+\begin{itemize}
+\item \texttt{dplyr}
+\item \texttt{forcats}
+\end{itemize}
+\end{itemize}
+
+\vspace{5mm}
+\section{Missing Data with \texttt{ifelse()}}
+\noindent \texttt{dplyr::}{\color{red}\texttt{mutate}}\texttt{(\textit{dataFrame}, \textit{var} = base::}{\color{red}\texttt{ifelse}}\texttt{(\textit{exp}, NA, \textit{var}))}
+
+\vspace{5mm}
+\section{Recoding Data with \texttt{case\_when()}}
+\noindent \texttt{dplyr::}{\color{red}\texttt{mutate}}\texttt{(\textit{dataFrame}, \textit{var} = dplyr::}{\color{red}\texttt{case\_when}}\texttt{(\textit{var}, \\ \textit{var} == \textit{val} \textasciitilde{} \textit{newVal}, \\ \textit{var} == \textit{val} \textasciitilde{} \textit{newVal}))}
+
+\vspace{5mm}
+\section{Convert to Factor}
+\noindent \texttt{base::}{\color{red}\texttt{as.factor}}\texttt{(\textit{var})}
+
+\vspace{5mm}
+\section{Releveling Factor}
+\noindent \texttt{dplyr::}{\color{red}\texttt{mutate}}\texttt{(\textit{dataFrame}, \textit{var} = dplyr::}{\color{red}\texttt{fct\_relevel}}\texttt{(\textit{var}, \\ "\textit{level}", "\textit{level}")}
+
+\vspace{5mm}
+\section{Recoding Factor}
+\noindent \texttt{dplyr::}{\color{red}\texttt{mutate}}\texttt{(\textit{dataFrame}, \textit{var} = dplyr::}{\color{red}\texttt{fct\_recode}}\texttt{(\textit{var}, \\ "\textit{newLevel}" = "\textit{oldLevel}", \\ "\textit{newLevel}" = "\textit{oldLevel}"))}
+
+% ============================================================
+\end{document}
