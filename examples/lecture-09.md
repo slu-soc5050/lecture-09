@@ -198,9 +198,10 @@ gss %>%
     ##               Graduate (4)  169   6.66%        14.64%
     ##                       <NA> 1384  54.53%             -
 
-Now, our `SPDEG` variable is converted to a factor (just by virute of
-being modified with `fct_relevel`). The frequency table shows that the
-levels have been reordered as we wished.
+Now, our `SPDEG` variable is converted to a factor. The frequency table
+shows that the levels have been reordered as we wished. The
+`fct_relevel()` function will follow the order you list the labels in
+when the function is called.
 
 ## Creating Factors
 
@@ -263,3 +264,16 @@ gss %>%
 
 `fct_recode()` will follow the order of the levels specified, and will
 collapse values into the new categories to the left of each equals sign.
+
+## When To Use Functions
+
+  - `ifelse()` - use when you have a small number of edits to make to
+    numeric variables (in terms of declaring values missing) and string
+    variables (for declaring values missing or editing a single specific
+    value)
+  - `case_when()` - use for categorical variables to convert to string
+    and/or declare a range of values missing
+  - `fct_relevel()` - use for editing the order of *already existing*
+    factors
+  - `fct_recode()` - use for specifying values for *new* factors, or for
+    changing the values of *existing* factors
