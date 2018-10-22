@@ -18,4 +18,5 @@ matrix:
       os: osx
 
 script:
+  - Rscript -e "rmarkdown::render('assignments/lab-08-replication/docs/lab-08-replication.Rmd')"
   - Rscript -e "rmarkdown::render('examples/lecture-09.Rmd')"

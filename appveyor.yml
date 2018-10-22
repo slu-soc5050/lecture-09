@@ -47,6 +47,7 @@ build_script:
   - travis-tool.sh install_deps
 
 test_script:
+  - Rscript -e "rmarkdown::render('assignments/lab-08-replication/docs/lab-08-replication.Rmd')"
   - Rscript -e "rmarkdown::render('examples/lecture-09.Rmd')"
 
 on_failure:

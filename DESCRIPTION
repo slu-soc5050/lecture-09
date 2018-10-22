@@ -14,9 +14,11 @@ BugReports: https://github.com/slu-soc5050/lecture-09/issues
 Imports:
     dplyr,
     forcats,
+    ggplot2,
     here,
     janitor,
     knitr,
+    readr,
     rmarkdown,
     testDriveR,
     usethis
