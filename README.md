@@ -1,7 +1,7 @@
 lecture-09 <img src="https://slu-soc5050.github.io/images/logo.png" align="right" />
 ===========================================================
 [![](https://img.shields.io/badge/semester-fall%202018-orange.svg)](https://github.com/slu-soc5050/lecture-09)
-[![](https://img.shields.io/badge/release-draft-red.svg)](https://github.com/slu-soc5050/lecture-09)
+[![](https://img.shields.io/badge/release-full-brightgreen.svg)](https://github.com/slu-soc5050/lecture-09)
 [![](https://img.shields.io/github/release/slu-soc5050/lecture-09.svg?label=version)](https://github.com/slu-soc5050/lecture-09/releases)
 [![](https://img.shields.io/github/last-commit/slu-soc5050/lecture-09.svg)](https://github.com/slu-soc5050/lecture-09/commits/master)
 [![](https://img.shields.io/github/repo-size/slu-soc5050/lecture-09.svg)](https://github.com/slu-soc5050/lecture-09)
@@ -13,7 +13,9 @@ This is the repository for Lecture 09 of the Saint Louis University course SOC 4
 ### Lecture Objectives
 At the end of this lecture and its corresponding assignments, students should be able to:
 
-1.
+1. Create factor variables using `dplyr` and `forcats`
+2. Create frequency tables with properly formatted percentage columns 
+3. Organize results by saving pre-formatted frequency tables as `.csv` files
 
 ### Lecture Resources
 
